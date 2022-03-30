@@ -29,7 +29,7 @@ namespace Mission13.Models
         public string BowlerPhoneNumber { get; set; }
         [MaxLength(10)]
         public string BowlerZip { get; set; }
-        [Range(1, 15, ErrorMessage = "Group size must between 1 and 15")]
+        [Range(1, 10, ErrorMessage = "Team Id must be between 1 and 10")]
         public int TeamID { get; set; }
         public Team Team { get; set; }
     }
